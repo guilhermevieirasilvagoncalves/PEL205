@@ -11,7 +11,7 @@ imagemR = np.zeros((lin,col))
 for y in range(1, lin):
     for x in range(1, col):
         r = imagem[y,x] 
-        imagemR[y,x] = r ** np.sqrt(1.1)
+        imagemR[y,x] = np.sqrt(r)
 
 cv2.imshow("imagem Resultado",imagemR/255)
 cv2.waitKey(0)
